@@ -139,7 +139,7 @@ footer p {
 }
 
 /* -------  Media Query ------- */
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   /*------ Header ------*/
   header {
     display: flex;
@@ -155,6 +155,7 @@ footer p {
     flex-direction: row;
     padding: 0;
     margin: 0;
+    min-width: 600px;
   }
 
   form select,
@@ -164,6 +165,7 @@ footer p {
     padding: 0px 0px 0px 0px;
     height: 24px;
     margin-bottom: 0;
+    width: 75%;
   }
 
   form label {
@@ -171,13 +173,16 @@ footer p {
     padding: 0;
     margin: 0;
     font-size: 18px;
+    width: 75%;
   }
 
   form button {
-    padding: 10px 30px 10px 30px;
+    flex: 1;
+    padding: 10px 0px 10px 0px;
     font-size: 20px;
     height: 40px;
-    width: 160px;
+    width: 50%;
+    max-width: 160px;
     margin-top: 15px;
     margin-right: 10px;
   }
